@@ -1,0 +1,468 @@
+
+.top-ribbon{
+  background-color: #1abc9c;
+  height: 38px;
+}
+.ribbon-content-phone{
+  font-weight: bold;
+  color: white;
+  padding: 5px;
+}
+.ribbon-content-email{
+  font-weight: bold;
+  color: white;
+  padding: 6px;
+}
+.homebox{
+  text-align: center;
+  margin-top: -10px;
+}
+.homebox-child-1 {
+  font-family: bignoodletitling;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+  margin-top: 70px;
+  letter-spacing: 5px;
+}
+.homebox-child-2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  padding: 40px 0px 0px 0px;
+  letter-spacing: 2px;
+}
+.homebox-btn-1{
+padding: 20px 80px 20px 80px;
+background-color: transparent;
+border:2px solid white;
+color: white;
+margin-top: 40px;
+border-radius: 80px;
+transition: 0 background-color;
+}
+.homebox-btn-1:hover{
+  background-color: #1abc9c;
+  transition-duration: 0.4s;
+  transition-delay: 0.2s;
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+}
+.arrows {
+	width: 60px;
+	height: 72px;
+	position: relative;
+  margin-top: 130px;
+	bottom: 20px;
+}
+
+.arrows path {
+	stroke: white;
+	fill: transparent;
+	stroke-width: 1px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+.choose h1{
+  text-align: center;
+  font-weight: bold;
+}
+.choose-images{
+  margin-top: 20px;
+}
+.student{
+  border-radius: 30px;
+  padding: 40px;
+}
+.student h3{
+  font-weight: bold;
+}
+.student h4{
+  font-weight: bold;
+}
+.student:hover{
+background-color: #ecf0f1;
+cursor: pointer;
+}
+.teacher{
+  border-radius: 30px;
+  padding: 40px;
+}
+.teacher h3{
+  font-weight: bold;
+}
+.teacher h4{
+  font-weight: bold;
+}
+.teacher:hover{
+background-color: #ecf0f1;
+cursor: pointer;
+}
+.about h1{
+  font-weight: bold;
+  text-align: center;
+}
+.about-us{
+  margin-top: 20px;
+  background-color: #1abc9c;
+  height: auto;
+}
+.about-us h3{
+  color: white;
+}
+.back-arrow:hover{
+  background-color: #ecf0f1;
+  cursor: pointer;
+}
+.panel-1{
+  padding-bottom:30px;
+}
+.panel-1 h3{
+  text-align: center;
+  font-weight: bold;
+}
+.panel-1 p{
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+.student-login p{
+  font-weight: bold;
+  cursor: pointer;
+}
+.student-login{
+  height: auto;
+}
+.student-login input{
+  width: 100%;
+  border-radius: 10px;
+  border:2px solid #1abc9c;
+  padding:10px;
+}
+.student-signup p{
+  font-weight: bold;
+  cursor: pointer;
+}
+.student-signup{
+  height: auto;
+}
+.student-signup input{
+  width: 100%;
+  border-radius: 10px;
+  border:2px solid #1abc9c;
+  padding:10px;
+}
+
+.panel-2{
+  padding-bottom:30px;
+}
+.panel-2 h3{
+  text-align: center;
+  font-weight: bold;
+}
+.panel-2 p{
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+.teacher-login p{
+  font-weight: bold;
+  cursor: pointer;
+}
+.teacher-login{
+  height: auto;
+}
+.teacher-login input{
+  width: 100%;
+  border-radius: 10px;
+  border:2px solid #1abc9c;
+  padding:10px;
+}
+.teacher-signup p{
+  font-weight: bold;
+  cursor: pointer;
+}
+.teacher-signup{
+  height: auto;
+}
+.teacher-signup input{
+  width: 100%;
+  border-radius: 10px;
+  border:2px solid #1abc9c;
+  padding:10px;
+}
+.login-head button{
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.login-head h1{
+  font-weight: bold;
+  /* text-align: center; */
+  float: left;
+  margin-left: 10px;
+}
+.login-head span{
+font-size: 20px;
+}
+.assign-marks input{
+  padding: 15px;
+  border:3px solid #1abc9c;
+  border-radius: 20px;
+  margin: 10px;
+  width: 100%;
+}
+.assign-marks select{
+  padding:15px;
+  border:2px solid #1abc9c;
+  width: 100%;
+  border-radius: 10px;
+}
+.student-signup select{
+  padding:15px;
+  border:2px solid #1abc9c;
+  width: 100%;
+  border-radius: 10px;
+}
+.student-signup select:hover{
+cursor: pointer;
+}
+.teacher-signup select:hover{
+  cursor: pointer;
+  }
+.teacher-signup select{
+  padding:15px;
+  border:2px solid #1abc9c;
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+
+.footer{
+  margin-bottom: 0px;
+  background-color: #212529;
+  height: 60vh;
+}
+.footer-child-1 h1{
+  color: white;
+  font-family: bignoodletitling;
+  letter-spacing: 2px;
+  font-size: 50px;
+}
+.footer-child-1 p{
+  color: white;
+  /* font-family: bignoodletitling; */
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+.footer-child-2{
+  color: white;
+  font-size: 20px;
+  margin-top: 50px;
+}
+.footer-child-2 ul li{
+  color: white;
+}
+
+
+footer{
+	/* position: fixed; */
+	bottom: 0;
+  height: auto;
+}
+
+.footer-distributed{
+	background-color: #212529 ;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+  height: auto;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: 0px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 30%;
+}
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font-family:bignoodletitling; 
+	margin: 0;
+  font-size: 35px;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img{
+	width: 30%;
+}
+
+.footer-distributed h3 span{
+	color:  #1abc9c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	/*height: 38px;*/
+  height: auto;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #e0ac1c;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 12px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+.creator-ribbon{
+  background-color: #1abc9c;
+  height: auto;
+  position: absolute;
+  width: 100%;
+}
+.creator-ribbon-1 h5{
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  margin-top: 12px;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */

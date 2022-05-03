@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>The Univ</title>
+  <meta charset="utf-8">
+  <!-- All Required Cdn's in the project -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/bignoodletitling" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+</head>
+
+<body>
+  <!-- TOP RIBBON START -->
+  <div class="top-ribbon" style="position: fixed; width: 100%; z-index: 10;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-4 col-sm-12">
+          <p class="ribbon-content-phone"><img
+              src="https://img.icons8.com/ios-glyphs/30/000000/phone-squared.png" />&nbsp;1234567890</p>
+        </div>
+
+        <div class="col-lg-6 col-md-8 col-sm-0">
+          <p class="ribbon-content-email pull-right"><img
+              src="https://img.icons8.com/material-rounded/24/000000/email-sign.png" />&nbsp;abc@gmail.com
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- TOP RIBBON END -->
+
+  <!-- NAVBAR START-->
+  <nav class="navbar navbar-inverse" style="color: white;">
+    <div class="container-fluid"
+      style=" background-color: #212529; position:fixed; width: 100%; margin-left: -1px; top:38px; z-index:10">
+      <div class="navbar-header">
+        <a class="navbar-brand" style="padding: 8px 0px 0px 0px;"><img src="images/logo.png" class="brand-img" /></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- NAVIGATION BAR END -->
+
+  <style>
+
+    /* styling the project */
+
+    .homebox {
+      background-image: url('images/home-bg.png');
+      height: auto;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: rgb(0, 0, 0, 0.8);
+      margin-top: -16px;
+      background-blend-mode: darken;
+      background-attachment: fixed;
+      min-height: 500px;
+    }
+
+    .chart-container {
+      width: 80%;
+      margin: 15px auto;
+    }
+
+    @media(max-width:922px) {
+      .homebox {
+        margin-top: -2px;
+      }
+    }
+
+    .top-ribbon {
+      background-color: #1abc9c;
+      height: 38px;
+    }
+
+    .ribbon-content-phone {
+      font-weight: bold;
+      color: white;
+      padding: 5px;
+    }
+
+    .ribbon-content-email {
+      font-weight: bold;
+      color: white;
+      padding: 6px;
+    }
+
+    .homebox {
+      text-align: center;
+    }
+
+    .homebox-child-1 {
+      font-family: bignoodletitling;
+      font-size: 80px;
+      color: white;
+      text-align: center;
+      margin-top: 70px;
+      letter-spacing: 5px;
+    }
+
+    .homebox-child-2 {
+      font-family: 'Anton', sans-serif;
+      font-size: 40px;
+      color: white;
+      text-align: center;
+      padding: 40px 0px 0px 0px;
+      letter-spacing: 2px;
+    }
+
+    .homebox-btn-1 {
+      padding: 20px 80px 20px 80px;
+      background-color: transparent;
+      border: 2px solid white;
+      color: white;
+      margin-top: 40px;
+      border-radius: 80px;
+      transition: 0 background-color;
+    }
+
+    .homebox-btn-1:hover {
+      background-color: #1abc9c;
+      transition-duration: 0.4s;
+      transition-delay: 0.2s;
+      font-weight: bold;
+      color: black;
+      font-size: 20px;
+    }
+
+    .arrows {
+      width: 60px;
+      height: 72px;
+      position: relative;
+      margin-top: 130px;
+      bottom: 20px;
+    }
+
+    .arrows path {
+      stroke: white;
+      fill: transparent;
+      stroke-width: 1px;
+      animation: arrow 2s infinite;
+      -webkit-animation: arrow 2s infinite;
+    }
+
+    @keyframes arrow {
+      0% {
+        opacity: 0
+      }
+
+      40% {
+        opacity: 1
+      }
+
+      80% {
+        opacity: 0
+      }
+
+      100% {
+        opacity: 0
+      }
+    }
+
+    @-webkit-keyframes arrow
+
+    /*Safari and Chrome*/
+      {
+      0% {
+        opacity: 0
+      }
+
+      40% {
+        opacity: 1
+      }
+
+      80% {
+        opacity: 0
+      }
+
+      100% {
+        opacity: 0
+      }
+    }
+
+    .arrows path.a1 {
+      animation-delay: -1s;
+      -webkit-animation-delay: -1s;
+      /* Safari 和 Chrome */
+    }
+
+    .arrows path.a2 {
+      animation-delay: -0.5s;
+      -webkit-animation-delay: -0.5s;
+      /* Safari 和 Chrome */
+    }
+
+    .arrows path.a3 {
+      animation-delay: 0s;
+      -webkit-animation-delay: 0s;
+      /* Safari 和 Chrome */
+    }
+
+    .choose h1 {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .choose-images {
+      margin-top: 20px;
+    }
+
+    .student {
+      border-radius: 30px;
+      padding: 40px;
+    }
+
+    .student h3 {
+      font-weight: bold;
+    }
+
+    .student h4 {
+      font-weight: bold;
+    }
+
+    .student:hover {
+      background-color: #ecf0f1;
+      cursor: pointer;
+    }
+
+    .teacher {
+      border-radius: 30px;
+      padding: 40px;
+    }
+
+    .teacher h3 {
+      font-weight: bold;
+    }
+
+    .teacher h4 {
+      font-weight: bold;
+    }
+
+    .teacher:hover {
+      background-color: #ecf0f1;
+      cursor: pointer;
+    }
+
+    .about h1 {
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .about-us {
+      margin-top: 20px;
+      background-color: #1abc9c;
+      height: auto;
+    }
+
+    .about-us h3 {
+      color: white;
+    }
+
+    .back-arrow:hover {
+      background-color: #ecf0f1;
+      cursor: pointer;
+    }
+
+    .panel-1 {
+      padding-bottom: 30px;
+    }
+
+    .panel-1 h3 {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .panel-1 p {
+      text-align: center;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .student-login p {
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .student-login {
+      height: auto;
+    }
+
+    .student-login input {
+      width: 100%;
+      border-radius: 10px;
+      border: 2px solid #1abc9c;
+      padding: 10px;
+    }
+
+    .student-signup p {
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .student-signup {
+      height: auto;
+    }
+
+    .student-signup input {
+      width: 100%;
+      border-radius: 10px;
+      border: 2px solid #1abc9c;
+      padding: 10px;
+    }
+
+    .panel-2 {
+      padding-bottom: 30px;
+    }
+
+    .panel-2 h3 {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .panel-2 p {
+      text-align: center;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .teacher-login p {
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .teacher-login {
+      height: auto;
+    }
+
+    .teacher-login input {
+      width: 100%;
+      border-radius: 10px;
+      border: 2px solid #1abc9c;
+      padding: 10px;
+    }
+
+    .teacher-signup p {
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .teacher-signup {
+      height: auto;
+    }
+
+    .teacher-signup input {
+      width: 100%;
+      border-radius: 10px;
+      border: 2px solid #1abc9c;
+      padding: 10px;
+    }
+    .footer {
+      background-color: #212529;
+      height: 60vh;
+    }
+
+    .footer-child-1 h1 {
+      color: white;
+      font-family: bignoodletitling;
+      letter-spacing: 2px;
+      font-size: 50px;
+    }
+
+    .footer-child-1 p {
+      color: white;
+      letter-spacing: 2px;
+      font-size: 20px;
+    }
+
+    .footer-child-2 {
+      color: white;
+      font-size: 20px;
+      margin-top: 50px;
+    }
+
+    .footer-child-2 ul li {
+      color: white;
+    }
+
+    footer {
+      bottom: 0;
+      height: auto;
+    }
+
+    .footer-distributed {
+      background-color: #212529;
+      box-sizing: border-box;
+      width: 100%;
+      text-align: left;
+      height: auto;
+      font: bold 16px sans-serif;
+      padding: 50px 50px 60px 50px;
+      margin-top: 0px;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    /* Footer left */
+
+    .footer-distributed .footer-left {
+      width: 30%;
+    }
+
+    .footer-distributed h3 {
+      color: #ffffff;
+      font-family: bignoodletitling;
+      margin: 0;
+      font-size: 35px;
+    }
+
+    /* The company logo */
+
+    .footer-distributed .footer-left img {
+      width: 30%;
+    }
+
+    .footer-distributed h3 span {
+      color: #1abc9c;
+    }
+
+    /* Footer links */
+
+    .footer-distributed .footer-links {
+      color: #ffffff;
+      margin: 20px 0 12px;
+    }
+
+    .footer-distributed .footer-links a {
+      display: inline-block;
+      line-height: 1.8;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .footer-distributed .footer-company-name {
+      color: #8f9296;
+      font-size: 14px;
+      font-weight: normal;
+      margin: 0;
+    }
+
+    /* Footer Center */
+
+    .footer-distributed .footer-center {
+      width: 35%;
+    }
+
+
+    .footer-distributed .footer-center i {
+      background-color: #33383b;
+      color: #ffffff;
+      font-size: 25px;
+      width: 38px;
+      /*height: 38px;*/
+      height: auto;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 42px;
+      margin: 10px 15px;
+      vertical-align: middle;
+    }
+
+    .footer-distributed .footer-center i.fa-envelope {
+      font-size: 17px;
+      line-height: 38px;
+    }
+
+    .footer-distributed .footer-center p {
+      display: inline-block;
+      color: #ffffff;
+      vertical-align: middle;
+      margin: 0;
+    }
+
+    .footer-distributed .footer-center p span {
+      display: block;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 2;
+    }
+
+    .footer-distributed .footer-center p a {
+      color: #e0ac1c;
+      text-decoration: none;
+    }
+
+    /* Footer Right */
+
+    .footer-distributed .footer-right {
+      width: 30%;
+    }
+
+    .footer-distributed .footer-company-about {
+      line-height: 20px;
+      color: #92999f;
+      font-size: 13px;
+      font-weight: normal;
+      margin: 0;
+    }
+
+    .footer-distributed .footer-company-about span {
+      display: block;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .footer-distributed .footer-icons {
+      margin-top: 12px;
+    }
+
+    .footer-distributed .footer-icons a {
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      border-radius: 2px;
+      font-size: 20px;
+      color: #ffffff;
+      text-align: center;
+      line-height: 35px;
+
+      margin-right: 3px;
+      margin-bottom: 5px;
+    }
+
+    .creator-ribbon {
+      background-color: #1abc9c;
+      height: auto;
+      position: absolute;
+      width: 100%;
+    }
+
+    .creator-ribbon-1 h5 {
+      text-align: center;
+      font-weight: bold;
+      color: black;
+      margin-top: 12px;
+    }
+
+    /* Adjusting Project Elements according to the screen size through media queries */
+
+    @media(max-width:991px) {
+      .ribbon-content-phone {
+        font-weight: bold;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+      }
+
+      .ribbon-content-email {
+        display: none;
+      }
+    }
+
+    @media(max-width:767px) {
+      .brand-img {
+        margin-left: -50px;
+      }
+    }
+
+    @media (max-width: 880px) {
+
+      .footer-distributed .footer-left,
+      .footer-distributed .footer-center,
+      .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+
+      .footer-distributed .footer-center i {
+        margin-left: 0;
+      }
+
+    }
+
+    @media (max-height:800px) {
+      footer {
+        position: static;
+      }
+
+      header {
+        padding-top: 40px;
+      }
+    }
+
+
+    @media (max-width:881px) {
+      .footer-distributed {
+        height: 60vh;
+      }
+    }
+
+    @media (max-width:389px) {
+      .footer-distributed {
+        height: 70vh;
+      }
+    }
+  </style>
+
+  <!-- HOMESCREEN START -->
+  <section id="home">
+    <div class="container-fluid homebox">
+      <div class="col-12">
+        <div class="row"><br>
+          <h1 class="homebox-child-1">THE UNIV</h1>
+          <h1 class="typing-text homebox-child-2">UNIVERSITY PORTAL FOR <span class="txt-rotate" data-period="2000"
+              data-rotate='[ "TEACHERS", "STUDENTS"]' style="color:#1abc9c"></span></h1>
+          <!-- <h3 class="homebox-child-2">THE UNIV COMPANY.</h3> -->
+          <!-- <br> -->
+          <!-- <a href="#about"><button type="submit" class="homebox-btn-1">Explore</button></a> -->
+          <svg class="arrows">
+            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- HOMESCREEN END -->
+  <br><br>
+  <div class="container about">
+    <div class="row">
+      <h1>About Us</h1>
+    </div>
+  </div>
+  <div class="container-fluid about-us">
+    <div class="row">
+      <div class="container">
+        <h3>The Univ is an University portal for students and teachers. Here teachers can upload Marks and
+          details of the students for the students to view them. The Univ is a simple e-learning solution. This makes it
+          quicker for both
+          teachers as well as students to interact. We work with the vision of making education simpler and eliminating
+          the factors of delay and miscommunication. Upload the info after 2 or 3 simple clicks making it easier for all
+          to access and use. Just Simple Signup select your category then login and go rocking.
+        </h3>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <div class="container-fluid choose">
+
+    <div class="row" id="tab">
+      <button type="button" onClick="window.location.reload();" class="btn btn-danger btn-lg pull-right student-logout"
+        id="logout">Logout</button>
+      <br><br><br>
+      <table class="table" id="sampleTable" border="1">
+        <tr>
+          <td>Student Name</td>
+
+          <td>Student Course</td>
+          <td>Student Email</td>
+          <td>Student Sem</td>
+          <td>Student Marks1</td>
+          <td>Student Marks2</td>
+          <td>Student Marks3</td>
+          <td>Student Marks4</td>
+          <td>Student Year</td>
+        </tr>
+
+      </table><br>
+      <main class="chart-container">
+        <h2>Semester Wise Marks Chart</h2>
+        <div>
+          <canvas id="barChart"></canvas>
+        </div>
+      </main>
+
+    </div>
+    <div class="row" id="tab1">
+      <button type="button" onClick="window.location.reload();" class="btn btn-danger btn-lg pull-right teacher-logout"
+        id="logout">Logout</button>
+      <table class="table" id="sampleTable1" border="1">
+
+        <br><br><br>
+        <tr>
+
+        </tr>
+      </table><br>
+      <div class="container action-div">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <center>
+              <h1>Display Student Records</h1><br>
+              <button type="button" class="btn btn-primary btn-lg display-records">Display</button>
+            </center>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <center>
+              <h1>Insert Student Records</h1><br>
+              <button type="button" class="btn btn-primary btn-lg insert-records">Insert</button>
+            </center>
+          </div>
+        </div>
+      </div>
+      <div class="table-container">
+        <div class="row">
+          <div class="col-lg-12"><br><br>
+            <table class="table table-hover" id="sampleTable2">
+              <tr>
+                <th>Firstname</th>
+                <th>Course</th>
+                <th>Email</th>
+                <th>Year</th>
+                <th>Sem</th>
+                <th>Marks1</th>
+                <th>Marks2</th>
+                <th>Marks3</th>
+                <th>Marks4</th>
+              </tr>
+
+              <tr>
+
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="container form-container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+            <div class="form-group">
+              <label for="semester">Semester:</label>
+              <input type="text" class="form-control" id="semester" placeholder="Enter semester" name="semester">
+            </div>
+            <div class="form-group">
+              <label for="marks1">Marks1:</label>
+              <input type="text" class="form-control" id="marks1" placeholder="Enter marks1" name="marks1">
+            </div>
+            <div class="form-group">
+              <label for="marks2">Marks2:</label>
+              <input type="text" class="form-control" id="marks2" placeholder="Enter marks2" name="marks2">
+            </div>
+            <div class="form-group">
+              <label for="marks3">Marks3:</label>
+              <input type="text" class="form-control" id="marks3" placeholder="Enter marks3" name="marks3">
+            </div>
+            <div class="form-group">
+              <label for="marks4">Marks4:</label>
+              <input type="text" class="form-control" id="marks4" placeholder="Enter marks4" name="marks4">
+            </div>
+
+            <div class="form-group">
+              <label for="year">Year:</label>
+              <input type="text" class="form-control" id="year" placeholder="Enter year" name="year">
+            </div>
+            <button type="button" class="btn btn-default" id="marks_insert">Submit</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="row choose-images" id="stutea">
+    <div class="custom">
+      <center>
+        <h1><b>I am a</h1></b>
+      </center>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="student">
+          <center>
+            <img src="https://img.icons8.com/external-justicon-lineal-color-justicon/100/000000/
+          external-student-back-to-school-justicon-lineal-color-justicon.png" />
+            <h3>STUDENT</h3>
+            <h4>If You Are A Student, Click Me</h4>
+          </center>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="teacher">
+          <center>
+            <img src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/100/000000/
+          external-teacher-education-xnimrodx-lineal-color-xnimrodx.png" />
+            <h3>TEACHER</h3>
+            <h4>If You Are A Teacher, Click Me</h4>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <br><br>
+
+  <div class="container-fluid panel-1">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <center>
+        <img src="https://img.icons8.com/external-justicon-lineal-color-justicon/100/000000/
+    external-student-back-to-school-justicon-lineal-color-justicon.png" />
+      </center>
+      <h3>STUDENT</h3>
+      <p id="panel-reset">Not a Student? Click me.</p>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="student-login">
+        <form action="/?type=student-login" method="post">
+          <input type="email" placeholder="email" name="studentemaillogin" id="studentemaillogin">
+          <br><br>
+          <input type="password" placeholder="password" name="studentpasswordlogin" id="studentpasswordlogin">
+          <Br><br>
+          <button type="button" class="btn btn-primary btn-lg" id="student_login">Login</button>
+          <br><br>
+          <p id="form-reset">Not Signed up? Click me.</p>
+        </form>
+      </div>
+      <div class="student-signup">
+        <form action="/?type=student" method="post">
+
+          <input type="text" placeholder="name" name="studentname" id="studentname">
+          <br><br>
+          <input type="text" placeholder="course" name="studentcourse" id="studentcourse">
+          <br><br>
+          <input type="email" placeholder="email" name="studentemail" id="studentemail">
+          <br><br>
+          <input type="password" placeholder="password" name="studentpassword" id="studentpassword">
+          <Br><br>
+          <button type="button" class="btn btn-primary btn-lg" id="student-signup">Signup</button>
+          <br><br>
+          <p id="form-reset-1">Already Signed Up? Click me.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid panel-2">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <center>
+        <img src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/100/000000/
+        external-teacher-education-xnimrodx-lineal-color-xnimrodx.png" />
+      </center>
+      <h3>TEACHER</h3>
+      <p id="panel-reset-1">Not a teacher? Click me.</p>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="teacher-login">
+        <input type="email" placeholder="email" name="teacheremail" id="teacheremaillogin">
+        <br><br>
+        <input type="password" placeholder="password" name="teacherpassword" id="teacherpasswordlogin">
+        <Br><br>
+        <button type="button" class="btn btn-primary btn-lg" id="teacher_login">Login</button>
+        <br><br>
+        <p id="form-reset-2">Not Signed up? Click me.</p>
+      </div>
+      <div class="teacher-signup">
+        <form action="/?type=teacher" method="post">
+
+          <input type="text" placeholder="name" name="tname" id="tname">
+          <br><br>
+          <input type="text" placeholder="course" name="tcourse" id="tcourse">
+          <br><br>
+          <input type="email" placeholder="email" name="temail" id="temail">
+          <br><br>
+          <input type="password" placeholder="password" name="tpassword" id="tpassword">
+          <Br><br>
+          <button type="button" class="btn btn-primary btn-lg" id="teacher-signup">Signup</button>
+          <br><br>
+          <p id="form-reset-3">Already Signed Up? Click me.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+  <!-- FOOTER START -->
+  <footer class="footer-distributed">
+
+    <div class="footer-left container-fluid">
+      <h3>THE&nbsp;<span>UNIV</span></h3>
+      <p class="footer-links">
+        University Portal for Teachers and Students.
+      </p>
+
+      <p class="footer-company-name">© The Univ.</p>
+    </div>
+    <div class="footer-right pull-right">
+      <p class="footer-company-about">
+        <span>Our Vision</span>
+        Making teacher student interaction in e-learing simpler. We work with the vision of making education simpler and
+        eliminating
+        the factors of delay.
+      </p>
+      <div class="footer-icons">
+        <img src="images/facebook.png" />
+        <img src="images/instagram.png" />
+        <img src="images/gmail.png" />
+      </div>
+    </div>
+  </footer>
+  <!-- FOOTER END -->
+  <!-- CREATOR RIBBON START-->
+  <div class="container-fluid creator-ribbon">
+    <div class="row creator-ribbon-1">
+      <h5>THE UNIV COMPANY</h5>
+    </div>
+  </div>
+  <!-- CREATOR RIBBON END -->
+</body>
+
+</html>
+<script>
+  var arr=new array();
+  $(document).ready(function () {
+    // Default Settigs to use.
+    $("#tab").hide();
+    $("#tab1").hide();
+
+    $('#logout').on('click', function () {
+      location.reload();
+    });
+
+    // Inserting Student Marks Ajax Code
+    $('#marks_insert').on('click', function () {
+      $.ajax({
+        url: "http://localhost:3000/?type=marks-insert",
+        type: "POST",
+        data: {
+          email: $("#email").val(),
+          sem: $("#semester").val(),
+          marks1: $("#marks1").val(),
+          marks2: $("#marks2").val(),
+          marks3: $("#marks3").val(),
+          marks4: $("#marks4").val(),
+          year: $("#year").val(),
+        },
+        dataType: 'json',
+        success: function (result) {
+          alert(" Succesful");
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+          alert("Status: " + textStatus); alert("Error: " + errorThrown);
+        }
+      });
+    });
+
+    // Student Signup Ajax Code
+    $('#student-signup').on('click', function () {
+      $.ajax({
+        url: "http://localhost:3000/?type=student",
+        type: "POST",
+        data: {
+          studentname: $("#studentname").val(),
+          studentcourse: $("#studentcourse").val(),
+          studentemail: $("#studentemail").val(),
+          studentpassword: $("#studentpassword").val(),
+
+        },
+        dataType: 'json',
+        success: function (result) {
+          alert("Signup succesful");
+        }
+        ,
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+          alert("Status: " + textStatus); alert("Error: " + errorThrown);
+        }
+      });
+    });
+
+    // Teacher Signup Ajax Code
+    $('#teacher-signup').on('click', function () {
+      $.ajax({
+        url: "http://localhost:3000/?type=teacher",
+        type: "POST",
+        data: {
+          tname: $("#tname").val(),
+          tcourse: $("#tcourse").val(),
+          temail: $("#temail").val(),
+          tpassword: $("#tpassword").val(),
+
+        },
+        dataType: 'json',
+        success: function (result) {
+          alert("Signup succesful");
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+          alert("Status: " + textStatus); alert("Error: " + errorThrown);
+        }
+      });
+    });
+
+    // Student Login Ajax Code
+    $('#student_login').on('click', function () {
+      $.ajax({
+        url: "http://localhost:3000/?type=student-login",
+        type: "POST",
+        data: {
+          studentemail: $("#studentemaillogin").val(),
+          studentpassword: $("#studentpasswordlogin").val(),
+        },
+        dataType: 'json',
+        success: function (result) {
+
+          if (result.userdata != "") {
+            $(".panel-1").hide(1000);
+            $(".panel-2").hide(1000);
+            $(".choose").show(1000);
+            $("#tab").show(1000);
+            $(".about").hide(1000);
+            $(".about-us").hide(1000);
+            $.each(result.userdata, function (key, value) {
+
+              var x = document.getElementById('sampleTable').insertRow(1);
+              var a1 = x.insertCell(0);
+              var a2 = x.insertCell(1);
+              var a3 = x.insertCell(2);
+              var a4 = x.insertCell(3);
+              var a5 = x.insertCell(4);
+              var a6 = x.insertCell(5);
+              var a7 = x.insertCell(6);
+              var a8 = x.insertCell(7);
+              var a9 = x.insertCell(8);
+              a1.innerHTML = value.sname;
+              a2.innerHTML = value.scourse;
+              a3.innerHTML = value.semail;
+              a4.innerHTML = value.sem;
+              a5.innerHTML = value.marks1;
+              a6.innerHTML = value.marks2;
+              a7.innerHTML = value.marks3;
+              a8.innerHTML = value.marks4;
+              a9.innerHTML = value.syear;
+              arr.push([value.marks1, value.marks2,value.marsk3,value.marks4]);
+            });
+          }
+          else {
+            alert("Login Error");
+
+          }
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+          alert("Status: " + textStatus); alert("Error: " + errorThrown);
+        }
+      });
+    });
+
+    // Teacher Login Ajax Code
+    $('#teacher_login').on('click', function () {
+      $.ajax({
+        url: "http://localhost:3000/?type=teacher-login",
+        type: "POST",
+        data: {
+          teacheremail: $("#teacheremaillogin").val(),
+          teacherpassword: $("#teacherpasswordlogin").val(),
+        },
+        dataType: 'json',
+        success: function (result) {
+          if (result.userdata != "") {
+            $(".panel-1").hide(1000);
+            $(".panel-2").hide(1000);
+            $(".choose").show(1000);
+            $("#tab1").show(1000);
+            $(".about").hide(1000);
+            $(".about-us").hide(1000);
+            var x = document.getElementById('sampleTable1').insertRow(0);
+            var a1 = x.insertCell(0);
+            var a2 = x.insertCell(1);
+            var a3 = x.insertCell(2);
+            a1.innerHTML = "Teacher Name";
+            a2.innerHTML = "Teacher Course";
+            a3.innerHTML = "Teacher Email";
+            // alert("df"+result.userdata1);
+            $.each(result.userdata, function (key, value) {
+
+              var x = document.getElementById('sampleTable1').insertRow(1);
+              var a1 = x.insertCell(0);
+              var a2 = x.insertCell(1);
+              var a3 = x.insertCell(2);
+              a1.innerHTML = value.tname;
+              a2.innerHTML = value.tcourse;
+              a3.innerHTML = value.temail;
+            });
+            // alert("kk"+result.userdata);
+            $.each(result.userdata1, function (key, value) {
+
+              var x = document.getElementById('sampleTable2').insertRow(1);
+              var a1 = x.insertCell(0);
+              var a2 = x.insertCell(1);
+              var a3 = x.insertCell(2);
+              var a4 = x.insertCell(3);
+              var a5 = x.insertCell(4);
+              var a6 = x.insertCell(5);
+              var a7 = x.insertCell(6);
+              var a8 = x.insertCell(7);
+              var a9 = x.insertCell(8);
+              a1.innerHTML = value.sname;
+              a2.innerHTML = value.scourse;
+              a3.innerHTML = value.semail;
+              a4.innerHTML = value.sem;
+              a5.innerHTML = value.marks1;
+              a6.innerHTML = value.marks2;
+              a7.innerHTML = value.marks3;
+              a8.innerHTML = value.marks4;
+              a9.innerHTML = value.syear;
+
+
+            });
+          }
+          else {
+            alert("Login Error");
+          }
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+          alert("Status: " + textStatus); alert("Error: " + errorThrown);
+        }
+      });
+    });
+  });
+
+  ////////////// Typing Effect ///////////
+
+  var TxtRotate = function (el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = '';
+    this.tick();
+    this.isDeleting = false;
+  };
+
+  TxtRotate.prototype.tick = function () {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
+    if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+    this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+    var that = this;
+    var delta = 300 - Math.random() * 100;
+    if (this.isDeleting) { delta /= 2; }
+    if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period;
+      this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === '') {
+      this.isDeleting = false;
+      this.loopNum++;
+      delta = 500;
+    }
+
+    setTimeout(function () {
+      that.tick();
+    }, delta);
+  };
+
+  window.onload = function () {
+    var elements = document.getElementsByClassName('txt-rotate');
+    for (var i = 0; i < elements.length; i++) {
+      var toRotate = elements[i].getAttribute('data-rotate');
+      var period = elements[i].getAttribute('data-period');
+      if (toRotate) {
+        new TxtRotate(elements[i], JSON.parse(toRotate), period);
+      }
+    }
+
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+    document.body.appendChild(css);
+  };
+
+
+  ////////////////////////////login and signup////////////////////////////////////////////
+  $(document).ready(function () {
+    //Default Settings
+    $(".panel-1").hide();
+    $(".panel-2").hide();
+    $(".student-signup").hide();
+    $(".teacher-signup").hide();
+    $(".table-container").hide();
+    $(".form-container").hide();
+
+    //Student Control Panel
+    $(".student").click(function () {
+      $(".panel-1").show(1000);
+      $(".custom").hide(1000);
+    });
+    $("#form-reset").click(function () {
+      $(".student-signup").show(1000);
+      $(".student-login").hide(1000);
+    });
+    $("#form-reset-1").click(function () {
+      $(".student-login").show(1000);
+      $(".student-signup").hide(1000);
+
+    });
+    $("#panel-reset").click(function () {
+      $(".panel-1").hide(1000);
+      $(".custom").show(1000);
+    });
+
+
+    //Teacher Control Panel
+    $(".teacher").click(function () {
+      $(".panel-2").show(1000);
+      $(".custom").hide(1000);
+    });
+    $("#form-reset-2").click(function () {
+      $(".teacher-signup").show(1000);
+      $(".teacher-login").hide(1000);
+    });
+    $("#form-reset-3").click(function () {
+      $(".teacher-login").show(1000);
+      $(".teacher-signup").hide(1000);
+
+    });
+    $("#panel-reset-1").click(function () {
+      $(".panel-2").hide(1000);
+      $(".custom").show(1000);
+    });
+
+    // Teacher and Student Logout
+    $(".student-logout").click(function () {
+      $("#tab").hide(1000);
+      $(".custom").show(1000);
+      $(".about").show(1000);
+      $(".about-us").show(1000);
+    });
+    $(".teacher-logout").click(function () {
+      $("#tab1").hide(1000);
+      $(".custom").show(1000);
+      $(".about").show(1000);
+      $(".about-us").show(1000);
+    });
+
+    //Insert and show marks Controls
+    $(".display-records").click(function () {
+      $(".table-container").toggle(500);
+      $(".form-container").hide(1000);
+    });
+    $(".insert-records").click(function () {
+      $(".form-container").toggle(500);
+      $(".table-container").hide(1000);
+    });
+  });
+    var ctx = document.getElementById("barChart").getContext('2d');
+var barChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ["Sem1", "Sem2", "Sem3", "Sem4", "Sem5", "Sem6"],
+    datasets: [{
+      label: 'data-1',
+      // name:'marks1',
+      data: arr[0],
+      backgroundColor: "rgba(255,0,0,1)"
+    },
+     {
+      label: 'data-2',
+      data: [30, 29, 5, 5, 20, 3, 10],
+      backgroundColor: "rgba(0,0,255,1)"
+    },{
+      label: 'data-3',
+      data: [30, 29, 5, 5, 20, 3, 10],
+      backgroundColor: "rgba(255,255,0)"
+    },{
+      label: 'data-4',
+      data: [30, 29, 5, 5, 20, 3, 10],
+      backgroundColor: "rgba(0,128,0)"
+    }]
+  }
+});
+</script>
